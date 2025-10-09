@@ -49,6 +49,11 @@ body {
 .bold {
   padding: 20px 50px;
 
+  font-weight: 800;
+}
+.bold span {
+  color: hsl(259, 100%, 65%); /* bright purple */
+
   font-size: 33px;
 }
 
