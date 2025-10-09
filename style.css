@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 450px;
+  border-radius: 20px;
+  border-bottom-right-radius: 50px;
+}
+
+.one {
+  /* learn more about position */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* keeps label slightly higher than input */
+  gap: 10px;
+  margin: 20px;
+}
+
+.feild {
+  display: flex;
+  flex-direction: column; /* label above input */
+  align-items: flex-start;
+  gap: 5px;
+  padding: 10px;
+  color: hsl(0, 1%, 44%);
+}
+.feild input {
+  max-width: 100px;
+  height: 25px;
+}
+
+.bold {
+  padding: 20px 50px;
+
+  font-size: 33px;
+}
+
+.line-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.line {
+  flex-grow: 1;
+  margin-left: 40px;
+  /* height: 5px; */
+}
+.arrow {
+  width: 25px;
+  height: 25px;
+  /* background-color: purple; */
+  /* border-radius: 50%; */
+  /* margin-right: 50px; */
+  /* display: flex;
+  flex-direction: column;*/
+  /* display: block; */
+  /* align-self: flex-end; */
+}
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 50px;
+  background-color: purple;
+  cursor: pointer;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.btn:active {
+  background-color: black;
+}

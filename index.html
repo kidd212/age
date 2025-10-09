@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <script src="./index.js"></script>
+    <div class="card">
+      <div class="one">
+        <div class="feild">
+          <label for="DAY">DAY</label>
+          <input type="number" id="DAY" />
+        </div>
+
+        <div class="feild">
+          <label for="MONTH">MONTH</label>
+          <input type="number" id="MONTH" />
+        </div>
+
+        <div class="feild">
+          <label for="YEAR">YEAR</label>
+          <input type="number" id="YEAR" />
+        </div>
+      </div>
+
+      <div class="line-arrow">
+        <hr class="line" />
+        <button class="btn" onclick="calculateAge()">
+          <img src="./arrow-down-svgrepo-com.svg" alt="button" class="arrow" />
+        </button>
+      </div>
+
+      <div class="bold">
+        <h1>0 years</h1>
+        <h1>0 months</h1>
+        <h1>0 days</h1>
+      </div>
+    </div>
+  </body>
+</html>
