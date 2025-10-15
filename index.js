@@ -12,7 +12,15 @@ function calculateAge() {
 
   // 2️⃣ Validation: make sure all fields are filled
   if (!day || !month || !year) {
-    alert("Please enter a valid date of birth!");
+    const errorMesasage = `Please enter a valid date of birth!`;
+    showToast(errorMesasage);
+    return;
+  }
+
+  if (day > 31 || month > 12 || year > new Date().getFullYear()) {
+    // alert("Please enter a valid date of birth!");
+    const birthDateErrorMessage = `Please enter a valid date of birth!`;
+    showToast(birthDateErrorMessage);
     return;
   }
 
@@ -21,7 +29,9 @@ function calculateAge() {
 
   // 3️⃣ Prevent future dates
   if (birthDate > today) {
-    alert("Date of birth cannot be in the future!");
+    // alert("Date of birth cannot be in the future!");
+    const future = `Date of birth cannot be in the future!`;
+    showToast(future);
     return;
   }
 
@@ -45,8 +55,20 @@ function calculateAge() {
   // 6️⃣ Display result
   const boldSection = document.querySelector(".bold");
   boldSection.innerHTML = `
-    <h1>${ageYears} years</h1>
-    <h1>${ageMonths} months</h1>
-    <h1>${ageDays} days</h1>
+    <h1><span class="zero">${ageYears}</span> years</h1>
+    <h1><span class="zero">${ageMonths}</span> months</h1>
+    <h1><span class="zero">${ageDays}</span> days</h1>
   `;
+}
+
+function showToast(message) {
+  Toastify({
+    text: message,
+    duration: 3000,
+    gravity: "top", // top or bottom
+    position: "center", // left, center or right
+    // backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)",
+    backgroundColor: "linear-gradient(to right, #ff416c, #ff4b2b)",
+    stopOnFocus: true,
+  }).showToast();
 }

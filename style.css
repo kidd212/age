@@ -55,14 +55,14 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0px 50px;
-  font-size: 48px;
-  gap: 15px;
+  font-size: 50px;
+  gap: 35px;
   margin-top: 13px;
   /* font-weight: 800; */
 }
-#zero {
+.zero {
   color: hsl(259, 100%, 65%); /* bright purple */
-  font-size: 48px;
+  font-size: inherit;
 }
 .bold h1 {
   line-height: 50px;
