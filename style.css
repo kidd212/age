@@ -48,6 +48,7 @@ body {
 .feild label {
   font-size: 10px;
   letter-spacing: 2px;
+  font-weight: bold;
   color: black;
 }
 
