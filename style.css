@@ -20,7 +20,7 @@ body {
   width: 550px;
   height: 450px;
   border-radius: 20px;
-  border-bottom-right-radius: 50px;
+  border-bottom-right-radius: 180px;
 }
 
 .one {
@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start; /* keeps label slightly higher than input */
-  gap: 10px;
+  gap: 20px;
   margin: 20px;
 }
 
@@ -42,19 +42,30 @@ body {
   color: hsl(0, 1%, 44%);
 }
 .feild input {
-  max-width: 100px;
-  height: 25px;
+  max-width: 120px;
+  height: 35px;
+}
+.feild label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: black;
 }
 
 .bold {
-  padding: 20px 50px;
-
-  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+  font-size: 48px;
+  gap: 15px;
+  margin-top: 13px;
+  /* font-weight: 800; */
 }
-.bold span {
+#zero {
   color: hsl(259, 100%, 65%); /* bright purple */
-
-  font-size: 33px;
+  font-size: 48px;
+}
+.bold h1 {
+  line-height: 50px;
 }
 
 .line-arrow {
